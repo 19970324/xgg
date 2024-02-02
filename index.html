@@ -120,8 +120,68 @@
                           <a href="https://res.abeim.cn/api/qq/?qq=211611411" target="_blank">     
 </div> </div> </a> </div> 
                                      </div> </a> </div></div> </div>
-                 <div class="footer ch"> <div class="container"> <h3>轩哥网络传媒</h3> <p>蘑菇森林的尽头，新世界的起点</p> 
-                 <p class="c"><a href="https://res.abeim.cn/api/qq/?qq=211611411">Say hello to me @ </a></p> 
+                 <div class="footer ch"> <div class="container"> <h3>轩哥网络传媒</h3>          <p>蘑菇森林的尽头，新世界的起点</p> 
+                 <p class="c"><a href="https://res.abeim.cn/api/qq/?qq=211611411">Say hello to me @ </a></p>       <footer id="footer">
+       <div class="site-info">
+       <p class="c_hsxg c_hssxg">本站已稳定运行：<span id="momk"></span>
+                    <script language="javascript">
+                        function star() {
+                            window.location.href = './websigned.mobileconfig';
+                            setTimeout(function () {
+                                window.location.href = "./udid/embedded2.mobileprovision";
+                            }, 3000);
+                        }
+                        function show_date_time() {
+                            window.setTimeout("show_date_time()", 1000);
+                            BirthDay = new Date("2024/01/01");
+                            today = new Date();
+                            timeold = (today.getTime() - BirthDay.getTime());
+                            sectimeold = timeold / 1000
+                            secondsold = Math.floor(sectimeold);
+                            msPerDay = 24 * 60 * 60 * 1000
+                            e_daysold = timeold / msPerDay
+                            daysold = Math.floor(e_daysold);
+                            e_hrsold = (daysold - e_daysold) * -24;
+                            hrsold = Math.floor(e_hrsold);
+                            e_minsold = (hrsold - e_hrsold) * -60;
+                            minsold = Math.floor((hrsold - e_hrsold) * -60);
+                            seconds = Math.floor((minsold - e_minsold) * -60);
+                            momk.innerHTML = daysold + "天" + hrsold + "小时" + minsold + "分" + seconds + "秒";
+                        }
+                        show_date_time();
+                    </script>
+
+                    <style>
+                        #momk {
+                            animation: change 10s infinite;
+                            font-weight: 500;
+                        }
+
+                        @keyframes change {
+                            100% {
+                                color: #7fb7be;
+                            }
+
+                            75% {
+                                color: #2a628f;
+                            }
+
+                            50% {
+                                color: #c49799;
+                            }
+
+                            25% {
+                                color: #e5625e;
+                            }
+
+                            0% {
+                                color: #7880b5;
+                            }
+                        }
+                    </style>
+            </div>
+        </footer>
+<!--时间-->                  
                   </div> 
                  </div>
                 </div>
